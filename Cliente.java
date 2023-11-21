@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente extends Producto{
 
     private String nombreCliente;
     private String direccion;
@@ -11,12 +11,12 @@ public class Cliente {
      * @param listaPedido
      * Complejidad temporal: 0(1) tiempo constante
      */
-    public Cliente(String nombreCliente, String direccion,  int listaPedido){
+    public Cliente( String nombreCliente, String direccion,  int listaPedido){
+        super(nombreCliente, direccion);
         this.nombreCliente = nombreCliente;
         this.direccion = direccion;
         this.listaPedido = listaPedido;
     }
-
     /**
      *
      * @return

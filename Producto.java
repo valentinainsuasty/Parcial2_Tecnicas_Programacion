@@ -1,12 +1,12 @@
 public class Producto {
-    private String nombre;
+    private String nombreProducto;
     private String descripcion;
     private double precio;
     private int cantidadInventario;
 
     /**
      *
-     * @param nombre
+     * @param nombreProducto
      * @param descripcion
      * @param precio
      * @param cantidadInventario
@@ -14,8 +14,8 @@ public class Producto {
      * Complejidad temporal: 0(1) tiempo constante
      */
 
-    public Producto(String nombre, String descripcion, double precio, int cantidadInventario){
-        this.nombre = nombre;
+    public Producto(String nombreProducto, String descripcion, double precio, int cantidadInventario){
+        this.nombreProducto= nombreProducto;
         this.descripcion = descripcion;
         this.precio = precio;
         this.cantidadInventario = cantidadInventario;
@@ -23,11 +23,20 @@ public class Producto {
 
     /**
      *
+     * @param nombreCliente
+     * @param direccion
+     * Complejidad temporal: 0(1) tiempo constante
+     */
+    public Producto(String nombreCliente, String direccion) {
+    }
+
+    /**
+     *
      * @return
      * Complejidad temporal: 0(1) tiempo constante
      */
-    public String getNombre() {
-        return nombre;
+    public String getNombreProducto() {
+        return nombreProducto;
     }
 
     /**
@@ -67,7 +76,7 @@ public class Producto {
      */
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombreProducto = nombre;
     }
 
     /**
